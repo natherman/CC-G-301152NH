@@ -5,4 +5,5 @@
  * 
  */
 module Javagrundlage {
+	requires junit;
 }

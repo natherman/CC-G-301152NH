@@ -1,10 +1,8 @@
 package topic7;
 
-import grundlage.IO;
-
 public class Recurs_words {
 
-	public static void main(String[] args) {
+	//public static void main(String[] args) {
 		// TODO Auto-generated method stub
 /*
  * public static void main(String[] args) {
@@ -19,10 +17,26 @@ public class Recurs_words {
  
 }
 }
- */
+ /*
 		String word = IO.promptAndReadString("Write a word?");
-		String word = new String umgekehrt
-		System.out.println("new word is" + word)
+		String umgekehrt;
+		String word = new String umgekehrt;
+		System.out.println("new word is" + word);
 		char result }
+*/
+		public static String umkehrenString(String str) {
+	        // Basisfall: Wenn der String leer ist oder nur ein Zeichen enthält
+	        if (str.isEmpty()) {
+	            return str;
+	        }
+	        // Rekursiver Fall: Umkehren des restlichen Strings und Hinzufügen des ersten Zeichens am Ende
+	        return umkehrenString(str.substring(1)) + str.charAt(0);
+	    }
 
-}
+	    public static void main(String[] args) {
+	        String original = "Marina";
+	        String umgekehrt = umkehrenString(original);
+	        System.out.println("Der umgekehrte String ist: " + umgekehrt);
+	    }
+	}
+
